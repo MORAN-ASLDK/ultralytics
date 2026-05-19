@@ -40,4 +40,8 @@ Validate the module
 # After training, an exp folder containing all the training result files will be created in the runs/train directory. The best.pt file in the weights folder can be used to call the validation script:
 python val.py --weights runs/train/exp/weights/best.pt --img 640
 ```
-
+Detect the pictures
+```bash
+# Utilizing the trained weights to perform inference on underwater images:
+python detect.py --weights runs/train/exp/weights/best.pt --source your_image_folder/  # Generate images with detection results in the corresponding runs/detect/ folder.
+```
