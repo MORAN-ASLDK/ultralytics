@@ -30,6 +30,7 @@ pip install -r requirements.txt
 ```bash
 # 导航到项目目录并运行以下代码以开始训练。
 # 按照我们的实验设置，batch size 设置为 64。如果您的显存不足，可以相应地减小 batch size。
+# 请注意，在训练前，请确保将 train.py 中的 data 参数修改为您数据集 data.yaml 文件的正确路径。
 python train.py --img 640 --batch 64 --epochs 300
 ```
 
