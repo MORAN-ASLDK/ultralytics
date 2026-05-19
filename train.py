@@ -7,7 +7,7 @@ from ultralytics import YOLO
 
 
 if __name__ == '__main__':
-    model = YOLO('ultralytics/cfg/models/11/yolo11n.yaml')
+    model = YOLO('CSMA-YOLO.yaml')
     # model.load('yolo11n.pt') # loading pretrain weights
     model.train(data='/root/dataset/dataset_visdrone/data.yaml',
                 cache=False,
