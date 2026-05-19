@@ -32,6 +32,7 @@ Note that the URPC and UTDAC datasets should be placed in the datasets directory
 ```bash
 # Navigate to the project directory and run the following code to start training.
 # Following our experimental setup, the batch size is set to 64. If you have insufficient GPU memory, you can adjust the batch size accordingly.
+# Note: Before training, please ensure that you update the data parameter in train.py to point to the correct relative or absolute path of your dataset's data.yaml file.
 python train.py --img 640 --batch 64 --epochs 300
 ```
 
