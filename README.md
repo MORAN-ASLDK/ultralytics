@@ -1,8 +1,8 @@
-# CSMS-YOLO
+# MSFE-YOLO
 
-# Real-Time Lightweight Underwater Object Detector via Cross-Stage Multi-Scale Feature Aggregation
+# Real-Time Underwater Object Detection viaMulti-Scale Feature Aggregation and Frequency-DomainEnhancement
 
-CSMS-YOLO is a target detection model we proposed based on the YOLOv11n baseline. It is explicitly designed to tackle underwater object detection challenges, including high noise levels, low visibility, and blurred edges. The architecture integrates four key innovations: the CSP-PMSFA module to preserve multi-scale information, the C2PSA-EDFFN module for frequency-domain filtering, the DetectAux module for deep supervision, and the D-InterpIoU loss for accurate bounding box regression. It has been extensively validated on the URPC and UTDAC datasets. With only slight increases in parameters and computational complexity, its detection accuracy is significantly higher than that of the baseline YOLOv11n model while maintaining real-time processing speeds.
+MSFE-YOLO is a target detection model we proposed based on the YOLOv11n baseline. It is explicitly designed to tackle underwater object detection challenges, including high noise levels, low visibility, and blurred edges. The architecture integrates four key innovations: the CSP-PMSFA module to preserve multi-scale information, the C2PSA-EDFFN module for frequency-domain filtering, the DetectAux module for deep supervision, and the D-InterpIoU loss for accurate bounding box regression. It has been extensively validated on the URPC and UTDAC datasets. With only slight increases in parameters and computational complexity, its detection accuracy is significantly higher than that of the baseline YOLOv11n model while maintaining real-time processing speeds.
 
 On both the URPC and UTDAC datasets, no pre-trained weights were used, and the model was trained from scratch for 300 epochs. The training was conducted on an Ubuntu 20.04 system equipped with an RTX 3090 Ti GPU.
 
@@ -10,7 +10,7 @@ Its performance metrics are as follows:
 
 | Datasets | size(pixels) | mAPval50:95 | mAPval50 | Precision | Recall | GFLOPs | params(M) | FPS |
 | :------- | :----------- | :---------- | :------- | :-------- | :----- | :----- | :-------- | :-- |
-| URPC     | 640          | 50.9        | 86.0     | 81.9      | 79.8   | 7.7    | 2.67      | 301 |
+| URPC     | 640          | 50.9        | 86.0     | 81.9      | 79.8   | 7.7    | 2.67      | 307 |
 | UTDAC    | 640          | 50.2        | 84.3     | 82.9      | 76.9   | 7.7    | 2.67      | 307 |
 
 
