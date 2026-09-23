@@ -1,6 +1,6 @@
 # MSFE-YOLO
 
-# Real-Time Underwater Object Detection viaMulti-Scale Feature Aggregation and Frequency-DomainEnhancement
+# Real-Time Underwater Object Detection via Multi-Scale Feature Aggregation and Frequency-Domain Enhancement
 
 MSFE-YOLO is a target detection model we proposed based on the YOLOv11n baseline. It is explicitly designed to tackle underwater object detection challenges, including high noise levels, low visibility, and blurred edges. The architecture integrates four key innovations: the CSP-PMSFA module to preserve multi-scale information, the C2PSA-EDFFN module for frequency-domain filtering, the DetectAux module for deep supervision, and the D-InterpIoU loss for accurate bounding box regression. It has been extensively validated on the URPC and UTDAC datasets. With only slight increases in parameters and computational complexity, its detection accuracy is significantly higher than that of the baseline YOLOv11n model while maintaining real-time processing speeds.
 
